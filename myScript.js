@@ -1,36 +1,17 @@
-// Show section 1
-function show1() {
-    document.getElementById("overlay1").style.display = "block";
-    document.getElementById("overlay1").scrollTop = 0;
+// Show section
+function show(number) {
+    document.getElementById("overlay" + number).style.display = "block";
+    document.getElementById("overlay" + number).scrollTop = 0;
 }
 
-// Show section 2
-function show2() {
-    switchToCloseCursor();
-    document.getElementById("overlay2").style.display = "block";
-    document.getElementById("overlay2").scrollTop = 0;
-}
-
-// Show section 3
-function show3() {
-    document.getElementById("overlay3").style.display = "block";
-    document.getElementById("overlay3").scrollTop = 0;
-}
-
-// Show section 4
-function show4() {
-    document.getElementById("overlay4").style.display = "block";
-    document.getElementById("overlay4").scrollTop = 0;
-}
-
-// Hide all
+// Hide all overlays
 function hideAll() {
-    document.body.style.cursor = "default";
-    document.getElementById("overlay1").style.display = "none";
-    document.getElementById("overlay2").style.display = "none";
-    document.getElementById("overlay3").style.display = "none";
-    document.getElementById("overlay4").style.display = "none";
     changeBgColor();
+    document.body.style.cursor = "default";
+    let overlayArray = document.getElementsByClassName("overlay");
+    for (let index = 0; index < overlayArray.length; index++) {
+        overlayArray[index].style.display = 'none';
+    }
 }
 
 // Switch cursor to close style
@@ -39,10 +20,9 @@ function switchToCloseCursor() {
 }
 
 // Change background color
-var i = 0;
+let i = 0;
 function changeBgColor() {
-    var myColorArray = ['#FFFFCC', '#FFCCFF', '#CCE6FF', '#CCFFCC'];
-    var arrayLength = myColorArray.length;
+    let myColorArray = ['#FFFFCC', '#FFCCFF', '#CCE6FF', '#CCFFCC'];
     document.body.style.backgroundColor = myColorArray[i];
     i++;
     if (i >= myColorArray.length) {
