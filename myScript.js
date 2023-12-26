@@ -1,11 +1,11 @@
 // Show section
-function show(number) {
+function showSection(number) {
     document.getElementById("overlay" + number).style.display = "block";
     document.getElementById("overlay" + number).scrollTop = 0;
 }
 
-// Hide all overlays
-function hideAll() {
+// Hide all sections
+function hideAllSections() {
     let overlayArray = document.getElementsByClassName("overlay");
     for (let index = 0; index < overlayArray.length; index++) {
         overlayArray[index].style.display = 'none';
