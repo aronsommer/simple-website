@@ -6,8 +6,6 @@ function show(number) {
 
 // Hide all overlays
 function hideAll() {
-    changeBgColor();
-    document.body.style.cursor = "default";
     let overlayArray = document.getElementsByClassName("overlay");
     for (let index = 0; index < overlayArray.length; index++) {
         overlayArray[index].style.display = 'none';
@@ -17,6 +15,11 @@ function hideAll() {
 // Switch cursor to close style
 function switchToCloseCursor() {
     document.body.style.cursor = "url('images/cursor-cross-black.png')16 0, pointer";
+}
+
+// Switch cursor to default style
+function switchToDefaultCursor() {
+    document.body.style.cursor = "default";
 }
 
 // Change background color
