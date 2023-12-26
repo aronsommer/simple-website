@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Website</title>
+    <meta name="author" content="Author">
+    <meta name="description" content="This is a simple website">
+    <meta name="keywords" content="Keyword1, Keyword2, Keyword3">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="includeHTML.js"></script>
+    <script src="myScript.js"></script>
+</head>
+
+<body onload="startFunction()">
+    <div id="container" data-nosnippet>
+
+        <!-- Sections -->
+
+        <!-- How To Create an Overlay -->
+        <!-- https://www.w3schools.com/howto/howto_css_overlay.asp -->
+
+        <!-- Section 1 -->
+        <div w3-include-html="section1.html"></div>
+
+        <!-- Section 2 -->
+        <div w3-include-html="section2.html"></div>
+
+        <!-- Section 3 -->
+        <div w3-include-html="section3.html"></div>
+
+        <!-- Section 4 -->
+        <div w3-include-html="section4.html"></div>
+
+        <!-- Main content -->
+
+        <div id="main">
+            <br><br>
+            <h1>Simple Website</h1><br>
+            <hr style="width:50%; text-align:center; border:none; border-top:1px black solid; height: 1px;">
+            <button class="text-button" onclick="show1()">Section 1</button><br>
+            <button class="text-button" onclick="show2()">Section 2</button><br>
+            <button class="text-button" onclick="show3()">Section 3</button><br>
+            <hr style="width:50%; text-align:center; border:none; border-top:1px black solid; height: 1px;">
+            <button class="text-button" onclick="show4()">Section 4</button><br>
+            <hr style="width:50%; text-align:center; border:none; border-top:1px black solid; height: 1px;">
+            <p>Copyright ©
+                <script>
+                    document.write(new Date().getFullYear())
+                </script> Simple Website
+            </p>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+
+    <script>
+        // Include HTML snippets
+        includeHTML(myCallback);
+        function myCallback() {
+            // code that has to wait goes here
+        }
+    </script>
+
+</body>
+
+</html>
