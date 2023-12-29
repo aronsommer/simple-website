@@ -1,10 +1,13 @@
+/* || COLORS */
+
 /*
-Colors:
 Yellow: #FFFFCC
 Pink: #FFCCFF
 Blue: #CCE6FF
 Green: #CCFFCC
 */
+
+/* || GENERAL STYLES */
 
 body,
 p,
@@ -124,7 +127,8 @@ audio {
     -webkit-tap-highlight-color: transparent;
 }
 
-/* Main content with background image */
+/* || MAIN CONTENT WITH BACKGROUND IMAGE */
+
 body {
     background-attachment: fixed;
     background-image: url('images/cover-1920x1080.jpg');
@@ -145,7 +149,8 @@ body {
     border-top: 1px white solid !important;
 }
 
-/* Desktop */
+/* || DESKTOP STYLES */
+
 @media screen and (min-width: 992px) {
 
     p {
@@ -175,7 +180,8 @@ body {
     }
 }
 
-/* Mobile */
+/* || MOBILE STYLES */
+
 @media screen and (max-width: 992px) {
 
     p {
