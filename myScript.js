@@ -20,8 +20,7 @@ function hideAllSections() {
 document.addEventListener('keydown', evt => {
     if (evt.key === 'Escape' && oneSectionIsShowing) {
         hideAllSections();
-        switchToDefaultCursor();
-        changeBgColor();
+        switchToDefaultCursor();        
     }
 });
 
