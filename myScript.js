@@ -34,7 +34,7 @@ function switchToDefaultCursor() {
     document.body.style.cursor = "default";
 }
 
-// Change background color
+// Change background color (not used in this example)
 let i = 0;
 function changeBgColor() {
     let myColorArray = ['#FFFFCC', '#FFCCFF', '#CCE6FF', '#CCFFCC'];
