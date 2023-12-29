@@ -124,6 +124,27 @@ audio {
     -webkit-tap-highlight-color: transparent;
 }
 
+/* Main content with background image */
+body {
+    background-attachment: fixed;
+    background-image: url('images/cover-1920x1080.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#main {
+    color: white;
+}
+
+.text-button {
+    color: white;
+}
+
+#main hr {
+    border-top: 1px white solid !important;
+}
+
 /* Desktop */
 @media screen and (min-width: 992px) {
 
@@ -151,29 +172,6 @@ audio {
     .section-text {
         font-size: 4vh;
         letter-spacing: 0.2vh;
-    }
-}
-
-/* Main content on desktop with background image */
-@media screen and (min-width: 992px) {
-    body {
-        background-attachment: fixed;
-        background-image: url('images/cover-1920x1080.jpg');
-        background-position: center top;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    #main {
-        color: white;
-    }
-
-    .text-button {
-        color: white;
-    }
-
-    #main hr {
-        border-top: 1px white solid !important;
     }
 }
 
