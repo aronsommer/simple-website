@@ -178,6 +178,12 @@ body {
         font-size: 4vh;
         letter-spacing: 0.2vh;
     }
+
+    .section-div {
+        position: absolute;
+        top: 15%;
+        width: 100%;
+    }
 }
 
 /* || MOBILE STYLES */
@@ -224,6 +230,12 @@ body {
         font-size: calc(5vh * 0.7);
         letter-spacing: calc(0.2vh * 0.7);
         padding: 0vw 10vw 0vw 10vw;
+    }
+
+    .section-div {
+        position: absolute;
+        top: calc(15% * 0.7);
+        width: 100%;
     }
 }
 
