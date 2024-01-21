@@ -65,6 +65,24 @@
         function myCallback() {
             // code that has to wait goes here
         }
+        // Display box-shadow if scrolled down
+        function onScrollFunction(id) {
+            const element = document.getElementById(id);
+            let x = element.scrollLeft;
+            let y = element.scrollTop;
+            // console.log("scrollLeft: " + x.toFixed() + " / scrollTop: " + y.toFixed());
+            const selectedClasses = document.querySelectorAll('.section-title');
+            if (y.toFixed() == 0) {
+                selectedClasses.forEach(element => {
+                    element.setAttribute('style', 'box-shadow: none');
+                });
+            }
+            else {
+                selectedClasses.forEach(element => {
+                    element.setAttribute('style', 'box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28');
+                });
+            }
+        }
     </script>
 
 </body>
